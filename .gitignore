@@ -262,3 +262,11 @@ __pycache__/
 
 ToDoFunctions/www/angular2/node_modules/**/*
 !ToDoFunctions/www/
+
+
+
+# Custom
+/build-scripts/Results/
+/build-scripts/tools/
+/build-scripts/variables/
+
