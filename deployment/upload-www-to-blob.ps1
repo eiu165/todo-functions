@@ -1,7 +1,9 @@
 $ProgressPreference="SilentlyContinue"
 
 $destinationUri = "https://$($Env:STORAGE_HOSTNAME)/www"
+$destinationUri
 $destinationKey = $Env:STORAGE_KEY
+$destinationKey
 .\deployment\AzCopy\AzCopy.exe /Source:.\ToDoFunctions\www /Dest:$destinationUri /DestKey:$destinationKey /SetContentType /S /Y
 if ($LastExitCode -ne 0) { throw "azcopy returned code $($LastExitCode)" }
 
