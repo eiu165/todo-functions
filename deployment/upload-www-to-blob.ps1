@@ -1,6 +1,6 @@
 $ProgressPreference="SilentlyContinue"
 
-Write-Host "inside upload-www-to-blob"
+"inside upload-www-to-blob"
 
 $destinationUri = "https://$($Env:STORAGE_HOSTNAME)/www"
 $destinationKey = $Env:STORAGE_KEY
