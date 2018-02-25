@@ -1,7 +1,5 @@
 $ProgressPreference="SilentlyContinue"
 
-"inside upload-www-to-blob"
-
 $destinationUri = "https://$($Env:STORAGE_HOSTNAME)/www"
 $destinationKey = $Env:STORAGE_KEY
 .\deployment\AzCopy\AzCopy.exe /Source:.\ToDoFunctions\www /Dest:$destinationUri /DestKey:$destinationKey /SetContentType /S /Y
